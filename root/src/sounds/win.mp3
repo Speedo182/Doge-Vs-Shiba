@@ -1,0 +1,25 @@
+// Import the required libraries
+import { Howl, Howler } from 'howler';
+
+// Define the audio file URL
+const audioURL = 'https://example.com/win.mp3';
+
+// Define the audio configuration
+const audioConfig = {
+  volume: 0.5, // Set the audio volume to 50%
+  loop: false, // Disable audio looping
+};
+
+// Create the audio object using the Howler library
+const audio = new Howl({
+  src: [audioURL],
+  ...audioConfig,
+});
+
+// Play the audio file when called
+function playAudio() {
+  audio.play();
+}
+
+// Export the audio object and play function
+export { audio, playAudio };
