@@ -1,0 +1,10 @@
+{
+"index.js": "/static/js/index.js",
+"index.css": "/static/css/index.css",
+"logo.svg": "/static/media/logo.svg",
+"shiba.jpg": "/static/media/shiba.jpg",
+"doge.png": "/static/media/doge.png",
+"manifest.json": "/manifest.json",
+"precache-manifest.3718d02b71281c60a1e39c00fbf09b55.js": "/precache-manifest.3718d02b71281c60a1e39c00fbf09b55.js",
+"service-worker.js": "/service-worker.js"
+}
