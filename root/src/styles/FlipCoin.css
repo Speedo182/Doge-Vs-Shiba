@@ -1,0 +1,95 @@
+/* FlipCoin.css */
+
+/* Coin Styles */
+.Coin {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  perspective: 1000px;
+}
+
+.Coin * {
+  box-sizing: border-box;
+}
+
+.Coin-front,
+.Coin-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.Coin-front {
+  background-image: url('path/to/heads-image.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.Coin-back {
+  background-image: url('path/to/tails-image.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Flip Animation */
+.Coin-flipper {
+  animation: flip-coin 1s ease-out;
+  animation-fill-mode: forwards;
+  transform-style: preserve-3d;
+}
+
+@keyframes flip-coin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Button Styles */
+.Button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.Button:hover {
+  background-color: #0062cc;
+}
+
+.Button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Additional Styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.result {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
