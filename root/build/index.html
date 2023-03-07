@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Doge Vs Shiba</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Doge Vs Shiba</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Choose your fighter</h2>
+        <div class="fighters">
+          <div class="fighter doge">
+            <h3>Doge</h3>
+            <img src="./static/media/doge.png" alt="Doge">
+            <button>Select Doge</button>
+          </div>
+          <div class="fighter shiba">
+            <h3>Shiba</h3>
+            <img src="./static/media/shiba.png" alt="Shiba">
+            <button>Select Shiba</button>
+          </div>
+        </div>
+      </section>
+      <section class="gameplay">
+        <h2>Gameplay</h2>
+        <p>Instructions: Use the arrow keys to move your fighter and the space bar to attack. Collect coins to gain points and health.</p>
+        <div class="game-board">
+          <canvas id="game-canvas"></canvas>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Doge Vs Shiba Game</p>
+    </footer>
+  </div>
+  <script src="./static/js/game.js"></script>
+</body>
+</html>
