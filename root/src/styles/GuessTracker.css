@@ -1,0 +1,43 @@
+.GuessTracker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.GuessTracker-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.GuessTracker-guesses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GuessTracker-guess {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.GuessTracker-guess--correct {
+  background-color: #32cd32;
+  color: #fff;
+}
+
+.GuessTracker-guess--incorrect {
+  background-color: #ff4500;
+  color: #fff;
+}
