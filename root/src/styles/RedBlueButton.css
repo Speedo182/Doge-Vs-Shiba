@@ -1,0 +1,29 @@
+.RedBlueButton {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 24px;
+  margin: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.RedBlueButton.red {
+  background-color: #f44336;
+}
+
+.RedBlueButton.red:hover {
+  background-color: #da190b;
+}
+
+.RedBlueButton.blue {
+  background-color: #2196F3;
+}
+
+.RedBlueButton.blue:hover {
+  background-color: #0b7dda;
+}
