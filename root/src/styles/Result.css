@@ -1,0 +1,37 @@
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.result-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.result-container p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.result-container button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4CAF50;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.result-container button:hover {
+  background-color: #3e8e41;
+}
