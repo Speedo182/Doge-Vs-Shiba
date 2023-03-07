@@ -1,0 +1,22 @@
+/* Button.css */
+
+.button {
+  display: inline-block;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 4px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.button:active {
+  background-color: #1f618d;
+}
