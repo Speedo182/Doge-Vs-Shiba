@@ -1,0 +1,38 @@
+.coin {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 10px #000, 0 0 0 10px #fff, 0 0 0 15px #000;
+  background: radial-gradient(circle at 30% 30%, #e4e4e4, transparent),
+              radial-gradient(circle at 70% 70%, #e4e4e4, transparent),
+              radial-gradient(circle at 30% 70%, #e4e4e4, transparent),
+              radial-gradient(circle at 70% 30%, #e4e4e4, transparent);
+}
+
+.coin:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 5px #000, 0 0 0 5px #fff, 0 0 0 8px #000;
+}
+
+.coin:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 10px #000, 0 0 0 10px #fff, 0 0 0 15px #000;
+  background: radial-gradient(circle at 30% 30%, #fff, transparent),
+              radial-gradient(circle at 70% 70%, #fff, transparent),
+              radial-gradient(circle at 30% 70%, #fff, transparent),
+              radial-gradient(circle at 70% 30%, #fff, transparent);
+}
